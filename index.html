@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/93f38692f5.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Portfolio|KevinDesy</title>
   </head>
   <body>
     <nav class="navbar">
@@ -27,7 +27,7 @@
       <main class="content">
         <h1>Mari Follow Akun Instagram <span class="span1">Kevin</span><span>Desy</span></h1>
         <p>Dengan menfollow akun kami kalian tidak akan menyesal sebab kami juga akan menfollow balik akun kakak/abang sekalian,dan kita juga bisa saling bersapa di Intagram dan menjadi teman,jadi buruan follow klik aja tombol di bawah.</p>
-        <a href="" class="Follow">Follow</a>
+        <a href="https://instagram.com/dsyhna_?igshid=ZGUzMzM3NWJiOQ==" class="Follow">Follow</a>
       </main>
     </section>
     <!-- akhir -->
@@ -36,15 +36,23 @@
     <section class="about" id="about">
       <h2>Tentang<span>Kami</span></h2>
 
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis delectus, veniam minima harum rerum recusandae non quia quasi velit aspernatur optio ipsa obcaecati quidem autem alias libero, tempora expedita veritatis ratione
-        earum. Eligendi ipsam distinctio porro, dignissimos temporibus eveniet voluptas illum quis laborum voluptatum omnis aliquam earum cupiditate quia!
-      </p>
-      <div class="icon">
-        <a href=""><i class="fas fa-paper-plane"></i></a>
-        <a href=""><i class="fas fa-mobile"></i></a>
-        <a href=""><i class="fas fa-church"></i></a>
-        <a href=""><i class="fas fa-car"></i></a>
+      <p>Kami adalah sepasang kekasih yang memiliki cita-cita bersama dan janji setia selamanya hingga kami berdiri di altar Rumah Tuhan</p>
+      <div class="media-social-about">
+        <div class="facebook">
+          <img src="img/facebook.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui, inventore perferendis labore harum illo odit dicta perspiciatis, quod aliquid ex ut, consectetur debitis vitae nemo earum cumque accusantium delectus itaque
+            sapiente veritatis nobis impedit! Dicta exercitationem aut autem quos ratione a itaque vero, voluptatibus rerum nobis soluta possimus eligendi deleniti dolor ullam error! Illo, sint minima tempora perferendis, voluptate fuga
+            quod odio iste sed excepturi, nulla eaque minus tenetur commodi laudantium alias aliquam possimus saepe impedit nostrum quia! Ipsa magni sequi enim a, non alias explicabo maiores aperiam delectus tempore? Nam corrupti hic
+            ratione aspernatur! Rem, inventore. Soluta ducimus deserunt aspernatur architecto voluptate, ut consectetur cupiditate quibusdam eos quaerat sit animi aliquid similique. Voluptates amet aut pariatur nihil expedita sint alias
+            vero rem labore natus maiores nam veritatis quisquam exercitationem, nesciunt laborum atque impedit quibusdam sed nisi aliquam iste asperiores qui optio! Consequuntur ad totam dolorum consectetur illo dignissimos amet ipsa
+            repudiandae, praesentium error repellendus incidunt doloribus explicabo beatae cumque tempore provident dolorem. Adipisci autem eligendi cupiditate fugiat voluptate cumque numquam distinctio nemo quaerat accusamus odit maxime
+            voluptatibus eos quae harum, mollitia voluptatum? Minima dignissimos quaerat velit iure, molestiae obcaecati quasi harum eum nemo similique pariatur repellat, officia ducimus.
+          </p>
+        </div>
+
+        <div class="instagram"></div>
+        <div class="whatsapp"></div>
       </div>
     </section>
 
@@ -65,16 +73,38 @@
         </div>
       </div>
     </section>
-    <section class="kontak" id="kontak">
-      <h2>Hubungi <span>Kami</span></h2>
-      <form>
-        <input class="nama" type="text" name="nama" placeholder="Nama Anda" required />
-        <input class="email" type="email" name="email" placeholder="Email Anda" required />
-        <textarea name="pesan" placeholder="Pesan Anda" required></textarea>
-        <button type="submit">Kirim Pesan</button>
-      </form>
-    </section>
+
+    <form class="kontak" id="kontak">
+      <div class="container">
+        <h1>Hubungi <span>Kami</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit adipisci a alias doloribus facilis officiis reprehenderit veritatis aspernatur quidem!.</p>
+
+        <div class="kontak_field">
+          <label for="nama" class="nama">Nama</label>
+          <input type="text" id="nama" class="form-input" required placeholder="Masukkan Nama" />
+          <label for="email" class="email">Email</label>
+          <input class="form-input" type="email" id="email" required placeholder="Masukkan Email" />
+          <label for="pesan" class="pesan">Pesan</label>
+          <textarea name="pesan" id="pesan" cols="20" rows="2" class="form-input" placeholder="Masukkan Pesan"></textarea>
+        </div>
+      </div>
+    </form>
+    <footer>
+      <div class="media-sosial">
+        <h4>Media Social</h4>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="https://instagram.com/dsyhna_?igshid=ZGUzMzM3NWJiOQ=="><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="github"></i></a>
+        <a href="#"><i data-feather="phone"> </i></a>
+      </div>
+      <div class="links">
+        <p>Created by <a href="">Kevin Marbun</a>.|&copy;2023</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

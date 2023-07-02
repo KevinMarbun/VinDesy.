@@ -1,6 +1,6 @@
 :root {
   --primary: rgb(0, 171, 225);
-  --bg: rgb(22, 31, 109);
+  --bg: rgba(22, 31, 109, 0.9);
 }
 * {
   padding: 0px;
@@ -13,13 +13,12 @@
   font-family: "Kevin Marbun";
   src: url(font/Cantarell-Regular.ttf);
 }
-body {
-  min-height: 2200px;
-}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 18px 5%;
+  opacity: 0.9;
   background-color: white;
   box-shadow: 0 0 4px rgba(11, 125, 160, 1);
   position: fixed;
@@ -132,7 +131,7 @@ section h2 {
   font-size: 13px;
   justify-content: center;
 }
-.icon {
+/* .icon {
   width: 100%;
   text-align: center;
 }
@@ -149,11 +148,20 @@ section h2 {
 .icon a:hover {
   transform: scale(1.2);
   opacity: 1;
-}
+} */
 
 .about span {
   color: white;
 }
+
+.media-social-about .facebook,
+.instagram,
+.whatsapp {
+  box-shadow: 0px 1px 3px black;
+  margin: auto;
+  width: 50%;
+}
+
 .kegiatan_kami {
   text-align: justify;
   padding: 40px 5%;
@@ -174,8 +182,9 @@ section h2 {
 }
 .kegiatan_kami p {
   line-height: 26px;
+  font-size: 13px;
 }
-.kegiatan-img {
+.kegiatan_kami {
   flex: 1 1 400px;
 }
 .kegiatan-img img {
@@ -185,33 +194,88 @@ section h2 {
   flex: 1 1 200px;
 }
 /* kontak */
-form {
+.kontak {
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg);
+}
+.kontak .container {
+  margin: auto;
+}
+.kontak h1 {
+  font-size: 30px;
   text-align: center;
+  padding-bottom: 30px;
+  text-shadow: 0 1px 4px rgba(136, 127, 127, 1);
+  color: black;
 }
-.kontak h2 {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.kontak input,
-.kontak textarea {
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.kontak textarea {
-  height: 100px;
-}
-.kontak button {
-  background-color: #4caf50;
+.kontak span {
   color: white;
-  padding: 10px 20px;
-
-  border: none;
-  cursor: pointer;
-  width: 50%;
+  text-shadow: 0 1px 4px rgba(136, 127, 127, 1);
 }
-.kontak button:hover {
-  opacity: 0.8;
+.kontak h1::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid white;
+  padding-bottom: 15px;
+  transform: scaleX(0.3);
+}
+.kontak p {
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  padding-bottom: 20px;
+}
+.kontak_field {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  width: 80%;
+  padding: 2px 25px;
+  padding-bottom: 25px;
+  margin: auto;
+  margin-top: 10px;
+  color: black;
+}
+.kontak_field label {
+  margin-top: 20px;
+  display: block;
+}
+.form-input {
+  width: 100%;
+  padding: 12px;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 4px;
+  color: #777;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.media-sosial h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.media-sosial a {
+  margin: 5px 15px;
+  padding: 5px;
+  color: white;
+}
+.links p {
+  word-spacing: 3px;
+}
+.links a {
+  color: white;
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+.links a:hover {
+  opacity: 1;
+  text-shadow: 0px 1px 6px white;
 }
 
 /* .kegiatan_kami .container {
@@ -231,7 +295,7 @@ form {
   }
 }
 /* tablet */
-@media (max-width: 758px) {
+@media (max-width: 768px) {
   html {
     font-size: 73.5%;
   }
