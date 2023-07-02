@@ -195,8 +195,9 @@ section h2 {
 }
 /* kontak */
 .kontak {
-  min-height: 120vh;
+  min-height: 100vh;
   display: flex;
+  padding-bottom: 30px;
   align-items: center;
   background-color: var(--bg);
 }
