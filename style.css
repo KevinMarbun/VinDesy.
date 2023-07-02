@@ -334,15 +334,6 @@ footer {
   html {
     font-size: 60%;
   }
-  .hero {
-    margin-top: 60px;
-  }
-  .kegiatan_kami {
-    text-align: center;
-  }
-  .kegiatan_kami img {
-    width: 300px;
-  }
 }
 
 /* @keyframes animasi {
